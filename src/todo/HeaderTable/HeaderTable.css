@@ -1,0 +1,5 @@
+.table {
+    border: 3px solid grey;
+    border-collapse: collapse;
+    width: 650px;
+}

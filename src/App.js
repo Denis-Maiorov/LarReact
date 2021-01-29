@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import HeaderTable from './todo/HeaderTable/HeaderTable'
+import AddTableRow from "./todo/AddTableRow/AddTableRow";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) => {
+    return (
+            <div className='wrapper'>
+                    <h2>Hello</h2>
+                    <button id="button" onClick={AddTableRow}>добавление строки</button>
+                <div>
+                    <HeaderTable state={props.state.headerTable}></HeaderTable>
+                </div>
+            </div>
+    )
 }
-
 export default App;

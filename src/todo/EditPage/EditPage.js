@@ -15,6 +15,7 @@ const EditPage = () => {
     let textRefDate = React.createRef();
     let checkBoxRef = React.createRef();
 
+
     let buttonSave = () => {
         localStorage.setItem(valueName, textRefName.current.value);
         localStorage.setItem(valueDate, textRefDate.current.value);
